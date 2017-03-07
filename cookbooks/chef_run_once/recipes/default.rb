@@ -4,6 +4,8 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+include_recipe 'chef-client'
+
 template 'chef-run-once command line' do
   source 'chef-run-once.erb'
   owner 'root'
