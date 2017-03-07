@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]; then
+   sudo <%= @chef_run_once_path %>
+else
+	<%= @cmd_to_run_chef %>
+fi
+
+exit 0
