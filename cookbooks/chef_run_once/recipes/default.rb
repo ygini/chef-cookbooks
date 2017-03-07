@@ -35,6 +35,6 @@ template 'chef-run-once sudoers.d config' do
   path '/etc/sudoers.d/chef-run-once'
   variables( 
   			:chef_run_once_path => node['chef_run_once']['chef_run_once_path'],
-  			:cmd_to_run_chef => node['chef_run_once']['chef_run_once_allowed_sudoer'] 
+  			:chef_run_once_allowed_sudoer => node['chef_run_once']['chef_run_once_allowed_sudoer'] 
   			)
 end
