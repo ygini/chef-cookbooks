@@ -5,6 +5,7 @@ license 'all_rights'
 description 'Installs chef-run-once command line'
 long_description 'The chef-run-once command line allow a end user without admin right to run chef service on demand'
 version '0.1.0'
+depends 'chef-client'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
