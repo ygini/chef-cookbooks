@@ -1,0 +1,6 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+cookbook "pkg_installer", "~> 0.1.0", path: "../pkg_installer"
+
