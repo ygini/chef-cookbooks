@@ -9,6 +9,9 @@
 # accept Xcode license
 /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -license accept
 
+# avoid any conflit with previous command line tools installed
+xcode-select -r
+
 # install embedded packages
 for PKG in /Applications/Xcode.app/Contents/Resources/Packages/*.pkg; do
     /usr/sbin/installer -pkg "$PKG" -target /
