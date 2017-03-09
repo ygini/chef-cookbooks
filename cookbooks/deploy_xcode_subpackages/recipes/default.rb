@@ -4,6 +4,8 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+raise if not ::File.exists?('/Applications/Xcode.app/Contents/MacOS/Xcode2') and node['deploy_xcode_subpackages']['raise_if_no_xcode']
+
 cookbook_file '/tmp/deploy_xcode_subpackages.sh' do
   source 'deploy_xcode_subpackages.sh'
   owner 'root'
